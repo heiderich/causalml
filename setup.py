@@ -9,7 +9,7 @@ except ImportError:
 try:
     from numpy import get_include as np_get_include
 except ImportError:
-    dist.Distribution().fetch_build_eggs(['numpy'])
+    dist.Distribution().fetch_build_eggs(['numpy>=1.18.5'])
     from numpy import get_include as np_get_include
 
 
